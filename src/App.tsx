@@ -3,8 +3,8 @@ import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { Provider } from 'react-redux';
 import { Route, Switch, useHistory } from 'react-router-dom';
 import { AppBarComponent, Sidebar, Menu, Dashboard, Search } from 'components';
+import { store } from 'store';
 import { SEARCH, MAIN, ROUTES } from './routes';
-import { store } from './store';
 
 export const App: React.FC = (): JSX.Element => {
   const [themeMode, setThemeMode] = useState<'light' | 'dark'>('dark');
