@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import HomeIcon from '@mui/icons-material/Home';
-import TableViewIcon from '@mui/icons-material/TableView';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import { SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 
@@ -19,5 +19,5 @@ export type RouteType = {
 
 export const ROUTES: RouteType[] = [
   { label: 'Home', path: MAIN, icon: HomeIcon },
-  { label: 'Search Tunes', path: SEARCH, icon: TableViewIcon },
+  { label: 'Search Tunes', path: SEARCH, icon: LibraryMusicIcon },
 ];

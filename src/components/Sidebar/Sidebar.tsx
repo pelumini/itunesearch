@@ -2,23 +2,8 @@ import React from 'react';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Divider, Drawer, IconButton, Typography } from '@mui/material';
-import { styled, useTheme } from '@mui/material/styles';
-
-const DrawerHeader = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  ...theme.mixins.toolbar,
-  justifyContent: 'flex-end',
-}));
-
-const LogoStyled = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  ...theme.mixins.toolbar,
-  justifyContent: 'flex-start',
-}));
+import { useTheme } from '@mui/material/styles';
+import { DrawerHeader, LogoStyled } from './Sidebar.styled';
 
 interface ISidebarProps {
   isOpen: boolean;
@@ -52,7 +37,7 @@ export const Sidebar: React.FC<ISidebarProps> = ({
         <DrawerHeader>
           <LogoStyled>
             <Typography variant="subtitle2" component="div" align="left">
-              TradePlart Logo
+              ITuneSearch Logo
             </Typography>
           </LogoStyled>
           <IconButton onClick={handleDrawerToggle}>

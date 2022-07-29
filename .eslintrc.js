@@ -30,6 +30,7 @@ module.exports = {
   rules: {
     'no-undef': 'off',
     'no-shadow': 'off',
+    'prefer-const': 'off',
     'import/no-cycle': 'off',
     'no-restricted-exports': 'off',
     'no-underscore-dangle': 'off',
