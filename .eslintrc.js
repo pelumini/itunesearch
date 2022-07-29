@@ -31,7 +31,7 @@ module.exports = {
     'no-undef': 'off',
     'no-shadow': 'off',
     'import/no-cycle': 'off',
-    'no-promise-executor-return': 'off',
+    'no-restricted-exports': 'off',
     'no-underscore-dangle': 'off',
     'no-use-before-define': 'off',
     'react/no-children-prop': 'off',

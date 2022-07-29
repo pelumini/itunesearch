@@ -1,13 +1,7 @@
 {
   "compilerOptions": {
     /* Paths */
-    "baseUrl": ".",
-    "outDir": "dist",
-    "paths": {
-      "src/*": ["src/*"],
-      "styles/*": ["src/styles/*"],
-      "config/*": ["src/config/*"]
-    },
+    "baseUrl": "src",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

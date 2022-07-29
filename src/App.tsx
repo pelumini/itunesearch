@@ -1,7 +1,12 @@
 import React from 'react';
+import { Test } from 'components';
 
 const App = () => {
-  return <div />;
+  return (
+    <>
+      <Test />
+    </>
+  );
 };
 
 export default App;
