@@ -17,7 +17,7 @@ export const Sidebar: React.FC<ISidebarProps> = ({
   isOpen,
   children,
   handleDrawerToggle,
-}) => {
+}): JSX.Element => {
   const theme = useTheme();
   return (
     <>
