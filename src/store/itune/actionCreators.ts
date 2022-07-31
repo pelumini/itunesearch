@@ -1,5 +1,5 @@
-import axios from 'axios';
 import { Dispatch } from 'redux';
+import { client } from 'utils/api';
 import { POKEMON_LOADING, POKEMON_FAIL, POKEMON_SUCCESS } from './actionTypes';
 import { PokemonDispatchTypes } from './types';
 
@@ -9,11 +9,7 @@ export const GetPokemon =
       dispatch({
         type: POKEMON_LOADING,
       });
-
-      const res = await axios.get(
-        `https://pokeapi.co/api/v2/pokemon/${pokemon}`
-      );
-
+      const res = await client.get(`${pokemon}`);
       dispatch({
         type: POKEMON_SUCCESS,
         payload: res.data,

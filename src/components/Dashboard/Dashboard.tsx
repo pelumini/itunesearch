@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTypedSelector } from 'store/hooks/useTypedSelector';
-// import { GetPokemon } from 'store/pokemon/PokemonActions';
-import { GetPokemon } from 'store/itune/actionCreators';
-// import { RootStore } from 'store/rootReducer';
+import { GetPokemon } from 'store/itune';
 
 export const Dashboard: React.FC = (): JSX.Element => {
   const dispatch = useDispatch<any>();
